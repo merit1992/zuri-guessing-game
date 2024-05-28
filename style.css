@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  width: 90%;
+  margin: 4em auto;
+  max-width: 600px;
+}
+
+.software-title {
+  text-align: center;
+  color: #1a1a32;
+  margin-bottom: 1em;
+}
+
+p,
+h2 {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.container,
+.display {
+  background-color: #1a1a32;
+  border: 2px solid #090909;
+  gap: 1rem;
+  padding: 3em 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+form {
+  width: 100%;
+}
+
+label,
+.btn-guess {
+  width: 70%;
+}
+
+.btn-guess,
+.number,
+.div-result,
+.start {
+  padding: 1em 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.start {
+  width: 70%;
+}
+
+.btn-guess {
+  margin-top: 1em;
+  background-color: #fff;
+  color: #1a1a32;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-guess:hover,
+.btn-guess:active {
+  background-color: pink;
+  opacity: 0.7;
+  transition: 500ms ease-in-out;
+}
+
+input::placeholder {
+  padding-left: 1em;
+}
+
+.display {
+  padding: 3em;
+}
+
+.hurray {
+  font-size: 1.1rem;
+  animation: hurray 5s ease-in-out;
+}
+
+.hurray-parag {
+  animation: hurray-parag 5s ease-in-out;
+}
+
+@keyframes hurray {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(180px);
+    font-size: 1.5rem;
+  }
+  50% {
+    transform: translateX(-200px);
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes hurray-parag {
+  0% {
+    transform: translateY(200px);
+  }
+}

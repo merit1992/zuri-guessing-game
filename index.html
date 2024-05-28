@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="software-title">Guessing Game</h1>
+      <div class="container flex">
+        <h2 class="game-heading">Play a Guessing game now</h2>
+        <p class="game-intruction">
+          This game permits you to guess a number from 1 - 100
+        </p>
+        <p>You can only guess three times</p>
+        <button type="button" id="start" class="start">Start...</button>
+        <p id="number-guess"></p>
+        <form class="flex hidden form" action="">
+          <label for="number">
+            Enter Number:
+            <input
+              type="number"
+              id="number"
+              class="number"
+              placeholder="1-100"
+            />
+          </label>
+          <button type="button" class="btn-guess" id="btn-guess">
+            Guess now
+          </button>
+        </form>
+        <div id="div-result"></div>
+      </div>
+      <div class="display flex hidden">
+        <h4 class="hurray">Hurray!!! You win</h4>
+        <p class="hurray-parag">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+          accusantium amet dicta debitis non voluptas qui accusamus, eligendi
+          dolorem dolor, aliquam laudantium. Tempora, iste. Nemo fugiat possimus
+          magni mollitia ex. Quae molestiae ad quas quo sint nemo earum minima
+          pariatur, necessitatibus, accusantium reprehenderit possimus est
+          doloribus illo commodi eligendi? Dolorem qui exercitationem doloremque
+          vitae sed similique voluptate esse autem labore?
+        </p>
+        <button id="start-again" class="start">Start...</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
